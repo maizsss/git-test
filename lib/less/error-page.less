@@ -1,0 +1,42 @@
+//错误页和debug页
+#error-page{
+  .wrapper-block{
+    .flexbox();
+    .align-items(center);
+    .justify-content(center);
+    height: 100%;
+    background-color: @color-Cbg1;
+    .content-block{
+      width: 200px;
+      margin: auto;
+      padding: 0;
+      p{
+        font-size: @size-T3;
+        color: @color-Ca2;
+        display: block;
+        margin-top: 0;
+        margin-bottom: @size-T6;
+        text-align: center;
+        &:before {
+          content: "";
+          display: block;
+          background: url('@{image-url}error-tip.png') 50% 50% no-repeat;
+          background-size: 32px 32px;
+          height: 32px;
+          margin-bottom: @size-T6 ;
+        }
+      }
+      .reload-button{
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: @size-T5;
+        color: @color-Ca3;
+        border: 1px solid @color-Ca2;
+        height: 40px;
+        line-height: 38px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

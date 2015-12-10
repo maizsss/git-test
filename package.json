@@ -1,0 +1,44 @@
+{
+  "name": "MobileWork",
+  "file": "index",
+  "version": "0.1.0",
+  "description": "demo",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-strip": "~0.2.1",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-cssmin": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "gulp": "*",
+    "gulp-less": "*",
+    "gulp-concat": "*",
+    "gulp-rename": "*",
+    "gulp-minify-css": "*",
+    "gulp-uglify": "*",
+    "css-loader": "^0.16.0",
+    "gulp-webpack": "^1.5.0",
+    "html-loader": "^0.3.0",
+    "sass-loader": "^2.0.1",
+    "less-loader": "*",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.12.3",
+    "stylus-loader": "^1.3.0",
+    "jshint-loader": "^0.8.3",
+    "jsx-loader": "*",
+    "vue-loader": "*",
+    "vue": "*",
+    "webpack": "^1.12.1",
+    "html-webpack-plugin": "^1.6.1"
+
+  },
+  "dependencies": {
+    "express": "3.x"
+  }
+}

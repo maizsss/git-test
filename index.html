@@ -1,20 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!--<html manifest="cache/ver1.appcache">-->
 <head>
-	<meta charset="UTF-8">
-	<title>hahaha</title>
-    <style>
-        h1 {
-            font-size: 18px;
-            color: #333;
-			line-height: 22px;
-			background: #f9f9f9;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>vue_component_webpack</title>
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://app.52tt.com/assets/images/touch-icon.png">
 </head>
 <body>
-	<h1>git push 1</h1>
-	<h2>change in the store.</h2>
+<div class="statusbar-overlay"></div>
+<div class="views">
+    <div class="view view-main">
+        <div class="pages" id="app">
+            <noscript><div class="no-js-tips">Javascript被系统禁用，导致无法正常访问，请检查浏览器设置！</div></noscript>
+
+        </div>
+    </div>
+</div>
+
+<!-- Templates-->
+<!-- 入口页 -->
+<script id="index-page-template" type="text/x-template">
+    <div id="index-page" data-page="index-page" class="page">
+        <div class="page-content">
+            <div class="index-page-wrap">
+
+
+            </div>
+        </div>
+    </div>
+</script>
+
+<!-- 错误页 -->
+<script id="error-page-template" type="text/x-template">
+    <div id="error-page" data-page="error-page" class="page">
+        <div class="page-content">
+            <div class="wrapper-block">
+                <div class="content-block">
+                    <p>加载失败，请检查网络连接</p>
+                    <a href="#" class="button reload-button">重新加载</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript" src="dist/js/bundle.min.js"></script>
+<script type="text/javascript" src="dist/js/main.js"></script>
+
+<script type="text/javascript" src="dist/js/build.js"></script>
+<!--<script type="text/javascript" src="src/js/custom.js"></script>
+<script type="text/javascript" src="src/js/index.js"></script>-->
 
 </body>
 </html>

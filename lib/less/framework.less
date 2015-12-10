@@ -1,0 +1,87 @@
+
+@import url('_mixins.less');
+@import url('_colors-vars.less');
+@import url('intro.less');
+@import url('grid.less');
+@import url('views.less');
+@import url('pages.less');
+@import url('toolbars.less');
+@import url('toolbars-pages.less');
+@import url('content-block.less');
+@import url('icons.less');
+@import url('lists.less');
+@import url('forms.less');
+@import url('modals.less');
+@import url('picker.less');
+@import url('tabs.less');
+@import url('disabled.less');
+@import url('error-page.less');
+
+@zoom:2;
+
+@size-T9:60px/@zoom;
+@size-T8:48px/@zoom;
+@size-T7:44px/@zoom;
+@size-T6:36px/@zoom;
+@size-T5:32px/@zoom;
+@size-T4:30px/@zoom;
+@size-T3:28px/@zoom;
+@size-T2_2:26px/@zoom;
+@size-T2:24px/@zoom;
+@size-T1:22px/@zoom;
+
+@color-Cg:#0bb75b; //绿色
+@color-Ca5:#5e5e5e; //灰色5
+@color-Ca4:#323232; //灰色4
+@color-Ca3:#878787; //灰色3
+@color-Ca2:#acacac; //灰色2
+@color-Ca1:#d9d9d9; //灰色1
+@color-Cr:#e30a0a; //红色
+@color-Cor:#ff6c58; //橙红色
+@color-Co:#f4c258; //橙黄
+@color-Cb:#000000; //黑色
+@color-Cbo:#ff6833; //橙色
+@color-Cbg1:#f5f4ee; //全屏背景色
+@color-Cbg2:#f7f7f7; //支付背景色
+@color-Cbf1:rgba(255,255,255,.9); //白色透明背景
+@color-Cl1:rgba(0,0,0, 0.1); //透明浅灰
+@color-Cl2:rgba(0,0,0, 0.15); //透明灰色
+@color-Cl3:lighten(#e5e5e5,5%); //灰色
+
+html, body{
+  font-family: Roboto, Noto, Helvetica, 'Microsoft YaHei', Arial, sans-serif;
+  font-size: @size-T2;
+  line-height: 1.4;
+  color: @color-Ca4;
+  font-weight: 300;
+}
+
+body{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+a{
+  color: inherit;
+}
+
+.pages {
+  background-color: #fff;
+}
+
+.page-content{
+  position: static;
+  span,em{
+    font-style: normal;
+  }
+}
+
+//无javascript环境
+.no-js-tips{
+  display: block;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: @size-T4;
+  color: @color-Ca3;
+  margin-top: 88px;
+}

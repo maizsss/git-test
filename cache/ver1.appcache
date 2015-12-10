@@ -1,0 +1,16 @@
+CACHE MANIFEST
+        # 2016-01-08:v0.1
+
+        NETWORK:
+        *
+
+        CACHE:
+        http://app.52tt.com/assets/images/touch-icon.png
+        http://app.52tt.com/favicon.ico
+        ../dist/img/error-tip.png
+        ../dist/img/loader-in-white.png
+        ../dist/img/loader-out-white.png
+        ../dist/js/bundle.min.js
+        ../dist/js/main.min.js
+        ../dist/css/style.min.css
+
